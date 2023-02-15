@@ -1,0 +1,28 @@
+name: Dependabot Alert
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16.x'
+
+    - name: Install Dependencies
+      run: npm ci
+
+    - name: Dependabot Alert
+      uses: dependabot/dependabot-core@0.151.2
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        directory: "/"
+        update: "lockfile"
