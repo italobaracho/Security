@@ -1,0 +1,23 @@
+{
+  "name": "matheus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/italobaracho/Security.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/italobaracho/Security/issues"
+  },
+  "homepage": "https://github.com/italobaracho/Security#readme",
+  "dependencies": {
+    "jquery": "^3.6.3"
+  }
+}
